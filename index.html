@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="frame">
+      <h1 id="title">Survey Form</h1>
+      <p id="description">Please fill in the survey to help us match your profile with the best job opportunities </p>
+      <form id="survey-form" method="post" action='https://survey-form-project.freecodecamp.org'>
+        <fieldset>
+          <label id="name-label" for="name">Name <input id="name" type="text" placeholder="Enter your name" required /></label>
+          <label id="email-label" for="email">Email <input id="email" type="email" placeholder="Enter your email" required /></label>
+          <label id="number-label" for="number">Location (ZIP code) <input id="number" type="number" min="10000" max="99999" placeholder="Enter your ZIP code" required /></label>
+        </fieldset>
+        <fieldset>
+          <label for="dropdown">Work time preference
+            <select id="dropdown" name="dropdown">
+              <option value="">(select one)</option>
+              <option value="1">Full time</option>
+              <option value="2">Part time</option>
+            </select>
+          </label>
+        </fieldset>
+        <fieldset>
+          <label>Education level</label>
+          <label for="bachelor"><input id="bachelor" type="radio" name="education" value="bachelor"> Bachelor's degree</label>
+          <label for="professional"><input id="professional" type="radio" name="education" value="professional" > Professional degree</label>
+          <label for="master"><input id="master" type="radio" name="education" value="master" > Master's degree</label>
+          <label for="doctoral"><input id="doctoral" type="radio" name="education" value="doctoral" > Doctoral degree</label>
+        </fieldset>
+        <fieldset>
+          <label>Contract type</label>
+          <label><input id="permanent" type="checkbox" name="contract" value="permanent"/> Permanent</label>
+          <label><input id="temporary" type="checkbox" name="contract" value="temporary"/> Temporary</label>
+          <label><input id="freelance" type="checkbox" name="contract" value="freelance"/> Freelance</label>
+        </fieldset>
+        <fieldset>
+          <label>Remote working</label>
+          <label><input id="hybrid" type="checkbox" name="remote" value="hybrid"/> Hybrid</label>
+          <label><input id="onsite" type="checkbox" name="remote" value="onsite"/> Onsite</label>
+          <label><input id="fully" type="checkbox" name="remote" value="fully"/> Fully remote</label>
+        </fieldset>
+        <fieldset>
+          <label>Spoken language</label>
+          <label><input id="english" type="checkbox" name="language" value="english"/> English</label>
+          <label><input id="spanish" type="checkbox" name="language" value="spanish"/> Spanish</label>
+          <label><input id="french" type="checkbox" name="language" value="french"/> French</label>
+          <label><input id="german" type="checkbox" name="language" value="german"/> German</label>
+          <label><input id="other" type="checkbox" name="language" value="other"/> Other <input id="otherlang" type="text" placeholder="which one(s)" required></input></label>
+        </fieldset>
+        <fieldset>
+          <label>Working sector</label>
+          <label><input id="agriculture" type="checkbox" name="sector" value="agriculture"/> Agriculture</label>
+          <label><input id="chemicals" type="checkbox" name="sector" value="chemicals"/> Chemical industries</label>
+          <label><input id="commerce" type="checkbox" name="sector" value="commerce"/> Commerce</label>
+          <label><input id="contruction" type="checkbox" name="sector" value="construction"/> Construction</label>
+          <label><input id="education" type="checkbox" name="sector" value="education"/> Education</label>
+          <label><input id="finances" type="checkbox" name="sector" value="finances"/> Financial services</label>
+          <label><input id="health" type="checkbox" name="sector" value="health"/> Health services</label>
+           <label><input id="tourism" type="checkbox" name="sector" value="tourism"/> Tourism</label>
+          <label><input id="meca-elec" type="checkbox" name="sector" value="meca-elec"/> Mecanical and electrical engineering</label>
+          <label><input id="media" type="checkbox" name="sector" value="media"/> Media</label>
+        </fieldset>
+        <fieldset>
+          <label for="comment">Additional criteria?
+            <textarea id="comment" name="comment" rows="3" cols="40" placeholder="company name, job title..."></textarea>
+          </label>
+        </fieldset>
+        <input id="submit" type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>
